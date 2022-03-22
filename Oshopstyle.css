@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -20,8 +27,13 @@ body{
     padding: 16px 8%;
 }
 
-
-
+#logotxt{
+    color: #337ab7;
+    text-decoration: none;
+}
+#logotxt:hover,#logotxt:active{
+    text-decoration: none;
+}
 main{
     margin-top: 100px;
 }
@@ -81,7 +93,7 @@ main{
     margin: 0;
     box-sizing: border-box;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     background-color: #009688;
     color: white;
     border-radius: 50%;
@@ -224,7 +236,7 @@ h2{
     font-size: 30px;
     margin-left: 30px;
 }
-footer{
+footer,#footer{
     display: flex;
     background-color: #1c1b1e;
     justify-content: space-between;
@@ -233,6 +245,10 @@ footer{
     width: 100%;
     margin-top: 20px;
 }
+footer div{
+    width: 50%;
+}
+
 .footer-link{
     text-decoration: none;
     color: white;
@@ -251,14 +267,12 @@ footer{
     opacity: 0.9;
     letter-spacing: 1px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-*{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+#ta1{
+    font-size: 25px;
+    font-weight: 500
 }
-html{
-    scroll-behavior: smooth;
-}
+
+
 #maindesdiv{
     display: flex;
     flex-wrap: wrap;
@@ -380,17 +394,6 @@ html{
     color: white;
     font-weight: 600;
 }
-@media(max-width:769px){
-    #largeimg{
-        width: 99%;
-        margin-top: 30px;
-
-    }
-    #description{
-        width: 99%;
-        margin-top: 30px;
-    }
-}
 
 @media(max-width:1024px){
     #clothes{
@@ -412,6 +415,15 @@ html{
     #accessories{
         grid-template-columns: 32% 32% 32%;
     }
+    #largeimg{
+        width: 99%;
+        margin-top: 30px;
+
+    }
+    #description{
+        width: 99%;
+        margin-top: 30px;
+    }
 }
 @media(max-width:600px){
     #clothes{
@@ -426,6 +438,11 @@ html{
     #accessories{
         grid-template-columns: 48% 48%;
     }
+    #left-menu>a{
+        visibility: hidden;
+        margin: 0px;
+        width: 0px;
+    }
 }
 @media(max-width: 480px){
     #clothes{
@@ -436,6 +453,19 @@ html{
       }*/
       #accessores{
         padding : 0 3.5% 0 3.5%;
+      }
+      footer,#footer{
+          flex-direction: column;
+          justify-content: space-around;
+          
+      }
+      footer div{
+          margin-left: auto;
+          margin-right: auto;
+      }
+      #footer div{
+        margin-left: auto;
+        margin-right: auto;
       }
 }
 @media(max-width:390px){
