@@ -67,10 +67,11 @@ function addToCart(prodId,prodSrc,prodName,prodPrice){
       prodCard.push(product);
       localStorage.setItem("prodCard",JSON.stringify(prodCard))
   }else{
+    
     var data = JSON.parse(localStorage.getItem("prodCard"));
-    data.push(product);
-    localStorage.setItem("prodCard",JSON.stringify(data))
-    console.log(data)
+      data.push(product)
+      localStorage.setItem("prodCard",JSON.stringify(data))
+    
     }
   }
   prodCard=JSON.parse(localStorage.getItem("prodCard"));
