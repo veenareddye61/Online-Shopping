@@ -192,11 +192,11 @@ h2{
     box-sizing: border-box;
 }
 #cart-div1{
-    width: 50%;
-    
+   
+    width: 100%;
 }
 #cart-div2{
-    width: 50%;
+   width: 100%;
     height: fit-content;
     margin-top: 48px;
     margin-left: 3%;
@@ -442,6 +442,12 @@ footer div{
         visibility: hidden;
         margin: 0px;
         width: 0px;
+    }
+    #main-cart-div{
+        flex-direction: column;
+    }
+    #cart-div1,#cart-div2{
+        width: 100%;
     }
 }
 @media(max-width: 480px){
