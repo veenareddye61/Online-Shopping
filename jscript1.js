@@ -40,6 +40,11 @@
             }
             
           )
-          prodCard=JSON.parse(localStorage.getItem("prodCard"));
-          $("#cart-count").text(prodCard.length);
-       
+        
+        
+            
+     
+      
+      
+    
+      
