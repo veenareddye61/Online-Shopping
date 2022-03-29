@@ -2,7 +2,6 @@ var productId = window.location.search.split('=')[1];
 /*var id = location.href
 var productId = id.charAt(id.length-1);*/
 var maindesWrap = $("#maindesdiv")
-var sCartLogo = $(".fa-shopping-cart")
 console.log(productId);
 $.get("https://5d76bf96515d1a0014085cf9.mockapi.io/product/"+productId,function(productList){
     var productdetails
@@ -73,8 +72,18 @@ function addToCart(prodId,prodSrc,prodName,prodPrice){
       localStorage.setItem("prodCard",JSON.stringify(data))
     
     }
+
+    var cartCount = document.querySelector("#cart-count");
+
+var datas = JSON.parse(localStorage.getItem("prodCard"));
+
+if (datas != null) {
+  cartCount.textContent = datas.length;
+}
   }
-  prodCard=JSON.parse(localStorage.getItem("prodCard"));
-  $("#cart-count").text(prodCard.length);
+  
+
+
+// cart count adedd
 
 
