@@ -6,7 +6,7 @@ var prodCard
 prodCard=JSON.parse(localStorage.getItem("prodCard"));
 console.log(prodCard)
 $('#itemCount').text(prodCard.length)
-$("#cart-count").text(prodCard.length);
+
 
 var sum=0
 
