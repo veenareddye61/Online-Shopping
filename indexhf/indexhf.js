@@ -2,9 +2,9 @@ var headerDiv = $("header");
 var headerData=`<nav class="header-nav">
         
             <div id="left-menu">
-                <div id="logo"><a href="/index.html" id="logotxt"><span>OShop</span></a></div>
-                <a href="/index.html#clothes">Clothing</a>
-                <a href="/index.html#accessories">Accessories</a>
+                <div id="logo"><a href="../index.html" id="logotxt"><span>OShop</span></a></div>
+                <a href="../index.html#clothes">Clothing</a>
+                <a href="../index.html#accessories">Accessories</a>
             </div>
             <div id="search-wrapper">
                 <i class="fas fa-search" aria-hidden="true"></i>
