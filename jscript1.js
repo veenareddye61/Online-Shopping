@@ -9,15 +9,13 @@
           for(i=0 ; i<= productList.length ; i++){
             if(productList[i].isAccessory===false){
               var clothesDiv1
-              clothesDiv1=`<div class="ctab">
-              <a href="${'./details/prdetails.html?id='+productList[i].id}" alt="prpic">
+              clothesDiv1=` <a href="${'./details/prdetails.html?id='+productList[i].id}" alt="prpic">
+              <div class="ctab">
               <img class="itab" src="${productList[i].preview}" ></img>
-              </a>
-            
               <p class="ttab">${productList[i].name}</p>
               <p class="bpara">${productList[i].brand}</p>
               <p class="price">${"Rs" + " " + productList[i].price}</p>
-              </div>`
+              </div> </a>`
               
               clothesDiv.append(clothesDiv1);
               console.log(clothesDiv)
@@ -25,14 +23,13 @@
             
             else{
               var accessoriesDiv1
-              accessoriesDiv1=`<div class="ctab">
-              <a href="${'./details/prdetails.html?id='+productList[i].id}" alt="prpic">
+              accessoriesDiv1=`<a href="${'./details/prdetails.html?id='+productList[i].id}" alt="prpic">
+              <div class="ctab">  
               <img class="itab" src="${productList[i].preview}" ></img>
-              </a>
               <p class="ttab">${productList[i].name}</p>
               <p class="bpara">${productList[i].brand}</p>
               <p class="price">${"Rs" + " " + productList[i].price}</p>
-              </div>`
+              </div></a>`
               accessoriesDiv.append(accessoriesDiv1);
             }
           }
@@ -40,10 +37,9 @@
             }
             
           )
-prodCard=JSON.parse(localStorage.getItem("prodCard"));
-  $("#cart-count").text(prodCard.length);
         
-        
+          prodCard=JSON.parse(localStorage.getItem("prodCard"));
+          $("#cart-count").text(prodCard.length);
             
      
       
