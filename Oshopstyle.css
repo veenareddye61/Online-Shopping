@@ -17,7 +17,7 @@ body{
     position: fixed;
     height:auto;
     width: 100%;
-    background-color:  rgb(155, 240, 229);
+    background-color:  white;
     box-shadow: 0 2px 5px #ccc;
     z-index: 10;
     top: 0;
@@ -247,7 +247,7 @@ h2{
 }
 footer,#footer{
     display: flex;
-    background-color: rgb(155, 240, 229);
+    background-color: rgba(27, 27, 27, 0.7);
     justify-content: space-between;
     box-sizing: border-box;
     padding: 4% 8%;
